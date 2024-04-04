@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'server-component',
+    selector: '[server-component]', // selecting by attribute
     templateUrl: './server.component.html',
-    styleUrl: './server.component.css'
+    styleUrls: ['./server.component.css']
 })
 
 export class ServerComponent {}
