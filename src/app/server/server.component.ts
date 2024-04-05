@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class ServerComponent {
     disableToAddServer = true;
+    serverMessage = 'No Server was added!';
 
     constructor() {
         setTimeout(() => {
@@ -18,5 +19,8 @@ export class ServerComponent {
     serverStatus: string = 'running';
     getServerStatus() {
         return this.serverStatus;
+    }
+    onServerClick() {
+        this.serverMessage = 'A server was added!';
     }
 }
