@@ -1,1 +1,8 @@
-<div class="server-component">This is my server component</div>
+<div class="container">
+    <div class="row">
+        <button class="btn btn-primary" [disabled]="disableToAddServer"> Add New Server </button>
+    </div>
+    <div class="server-component row">
+        {{ ' Server ' }} with id {{ serverId }} is {{ getServerStatus() }}
+    </div>
+</div>
